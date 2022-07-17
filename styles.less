@@ -70,7 +70,54 @@ body, input, textarea, button{
     &:hover{
       color: @green;
     }
+  } 
+}
+
+.container {
+  background: url('assets/bg-image.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: right -10rem bottom -8rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+    color: @green;
   }
 
-  
+  p {
+    font-size: 100%;
+    font-weight: 600;
+    color: @green;
+  }
+
+  button {
+    background-color: @green;
+    color: @blue;
+    height: 3rem;
+    width: 14rem;
+    
+    padding: 1rem 1.5rem;
+    border-radius: 12rem;
+    border: 0;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 75%;
+  }
 }
